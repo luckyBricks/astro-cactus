@@ -1,5 +1,5 @@
 const siteMeta = {
-  title: "Astro Theme Cactus",
+  title: "偏安一隅",
   description: "An opinionated starter theme for Astro",
   lang: "en-GB",
   ogLocale: "en_GB",

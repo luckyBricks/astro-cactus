@@ -1,5 +1,12 @@
 @tailwind base;
 @layer base {
+	@font-face {
+		font-family: "思源宋体 Regular";
+		font-weight: 400;
+		src: url("//at.alicdn.com/wf/webfont/FbdXppH9p865/guXbkmkhcfc636r0qtHt_.woff2") format("woff2"),
+		url("//at.alicdn.com/wf/webfont/FbdXppH9p865/VKv2eHnX4G-V981vz7LrS.woff") format("woff");
+		ont-display: swap;
+  	}
 	:root {
 		color-scheme: light;
 		--theme-bg: 0 0% 98%;
@@ -27,8 +34,10 @@
 	}
 
 	html body {
-		@apply h-full max-w-3xl mx-auto px-8 pt-16 font-mono font-normal antialiased text-sm flex flex-col text-textColor bg-bgColor;
+		@apply h-full max-w-3xl mx-auto px-8 pt-16 font-CompatCN font-normal antialiased text-sm flex flex-col text-textColor bg-bgColor;
+	
 	}
+
 }
 @tailwind components;
 @tailwind utilities;

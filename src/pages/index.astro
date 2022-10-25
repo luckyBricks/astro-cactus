@@ -6,8 +6,8 @@ import { sortMDByDate } from "@/util";
 import type { Post } from "@/types";
 
 const meta = {
-	title: "Astro Cactus",
-	description: "The perfect starter for your perfect blog.",
+	title: "Home",
+	description: "Bricks' personal site",
 };
 
 const MAX_POSTS = 10;
@@ -31,7 +31,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 		<ul class="space-y-4 sm:space-y-2">
 			{
 				allPostsByDate.map((p) => (
-					<li class="flex flex-wrap items-center gap-x-2 [&_q]:w-full">
+					<li class="[&_q]:w-full flex flex-wrap items-center gap-x-2">
 						<BlogPostPreview post={p} as="h2" />
 					</li>
 				))
