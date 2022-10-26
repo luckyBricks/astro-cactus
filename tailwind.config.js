@@ -7,9 +7,6 @@ module.exports = {
 		aspectRatio: false,
 	},
 	theme: {
-		fontFamily:{
-			'CompatCN': ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"','"思源宋体 Regular"', 'monospace']
-		},
 		extend: {
 			colors: {
 				bgColor: "hsl(var(--theme-bg) / <alpha-value>)",

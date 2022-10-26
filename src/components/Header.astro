@@ -74,7 +74,7 @@ const url = new URL(Astro.request.url);
 					fill="#FFFFFF"
 					p-id="1108"></path>
 			</svg>
-			<span>Bricks' Blog | 偏安一隅</span>
+			<span>Bricks' Blog</span>
 		</a>
 		<nav id="navigation-menu" aria-label="Main">
 			<a href="/" aria-current={url.pathname === "/" ? "page" : false}>Home</a>
@@ -83,6 +83,9 @@ const url = new URL(Astro.request.url);
 			</a>
 			<a href="/posts" aria-current={url.pathname === "/posts" ? "page" : false}
 				>Blog
+			</a>
+			<a href="/tags" aria-current={url.pathname === "/tags" ? "page" : false}
+				>Tags
 			</a>
 		</nav>
 	</span>
